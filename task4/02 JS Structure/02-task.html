@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        div {
+            background-color: lightblue;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Завдання: Закоментуйте рядки сценарію, які не є інструкціями, а описом до інструкцій.
+    </p>
+    <div>
+        Hello world
+    </div>
+    <script>
+        // створюємо змінну з ім'ям element і надає їй перший HTML елемент div, який буде знайдений у документі.
+        let element = document.querySelector("div");
+        
+        // "Вішаємо" обробник на подію click (клік лівою клавішею миші).
+        // При натисканні HTML елемента, що знаходиться в змінній element буде запускатися функція-обробник.
+        
+        element.addEventListener("click", function() {
+            element.innerText = "Привіт світ!";  //для HTML елемента, який знаходиться в змінній element, змінюємо значення тексту, який знаходиться в елементі.
+        });
+    </script>
+</body>
+</html>

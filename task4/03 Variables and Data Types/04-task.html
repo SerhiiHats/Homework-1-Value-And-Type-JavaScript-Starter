@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <style>
+        span{
+            font-size: 20px;
+            color: rgb(207, 28, 28);
+            
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Завдання:
+        Виконайте завдання згідно з коментарем у коді.
+    </pre>
+    <div>Середня ціна товару: <span class="midle-price">ddd55</span></div>
+    <p>Загальна вартість всіх продуктів, які є на складі: <span class="common-price"></span></p>
+    
+    <script>
+        let productPrice1 = 101.5; // ціна 1го продукту
+        let productPrice2 = 50.25; // ціна 2го продукту
+        let productPrice3 = 10.11; // ціна 3го продукту
+
+        let productQuantity1 = 5;  // кількість одиниць 1го продукту на складі
+        let productQuantity2 = 9;  // кількість одиниць 2го продукт на складі
+        let productQuantity3 = 15; // кількість одиниць 3го продукт на складі
+
+        // Виведіть на екран:
+        // 1) Середню ціну товару
+        // 2) Загальну вартість всіх продуктів, які є на складі
+
+        let midlePrice = (productPrice1 + productPrice2 + productPrice3) / 3;
+        console.log(midlePrice);
+        let commonPrice = (productPrice1 * productQuantity1) + (productPrice2 * productQuantity2) + (productPrice3 * productQuantity3);
+        console.log(commonPrice);
+
+        let spanMidlePrice = document.querySelector(".midle-price");
+        spanMidlePrice.textContent = midlePrice;
+
+        let spanCommonPrice = document.querySelector(".common-price");
+        spanCommonPrice.textContent = commonPrice;
+        
+    </script>
+</body>
+</html>
+
